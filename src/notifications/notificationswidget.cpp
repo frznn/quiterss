@@ -58,6 +58,7 @@ NotificationWidget::NotificationWidget(QList<int> idFeedList,
   bool showButtonMarkReadNotify;
   bool showButtonExBrowserNotify;
   bool showButtonDeleteNotify;
+  bool showButtonDeleteAllNotify;
 
   if (idFeedList.count()) {
     screen_ = mainApp->mainWindow()->screenNotify_;
@@ -78,6 +79,7 @@ NotificationWidget::NotificationWidget(QList<int> idFeedList,
     showButtonMarkReadNotify = mainApp->mainWindow()->showButtonMarkReadNotify_;
     showButtonExBrowserNotify = mainApp->mainWindow()->showButtonExBrowserNotify_;
     showButtonDeleteNotify = mainApp->mainWindow()->showButtonDeleteNotify_;
+    showButtonDeleteAllNotify = mainApp->mainWindow()->showButtonDeleteAllNotify_;
     closeNotify_ = mainApp->mainWindow()->closeNotify_;
   } else {
     OptionsDialog *options = qobject_cast<OptionsDialog*>(parentWidget);
@@ -99,6 +101,7 @@ NotificationWidget::NotificationWidget(QList<int> idFeedList,
     showButtonMarkReadNotify = options->showButtonMarkReadNotify_->isChecked();
     showButtonExBrowserNotify = options->showButtonExBrowserNotify_->isChecked();
     showButtonDeleteNotify = options->showButtonDeleteNotify_->isChecked();
+    showButtonDeleteAllNotify = options->showButtonDeleteAllNotify_->isChecked();
     closeNotify_ = options->closeNotify_->isChecked();
 
     for (int i = 0; i < 10; i++) {

@@ -183,6 +183,7 @@ public:
   QCheckBox *showButtonMarkReadNotify_;
   QCheckBox *showButtonExBrowserNotify_;
   QCheckBox *showButtonDeleteNotify_;
+  QCheckBox *showButtonDeleteAllNotify_;
   QCheckBox *closeNotify_;
 
   QCheckBox *fullscreenModeNotify_;

@@ -270,6 +270,7 @@ public:
   bool showButtonMarkReadNotify_;
   bool showButtonExBrowserNotify_;
   bool showButtonDeleteNotify_;
+  bool showButtonDeleteAllNotify_;
   bool closeNotify_;
   QList<int> idFeedsNotifyList_;
 

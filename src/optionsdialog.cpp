@@ -1174,6 +1174,7 @@ void OptionsDialog::createNotifierWidget()
   showButtonMarkReadNotify_ = new QCheckBox(tr("Show button 'Mark Read/Unread'"));
   showButtonExBrowserNotify_ = new QCheckBox(tr("Show button 'Open in External Browser'"));
   showButtonDeleteNotify_ = new QCheckBox(tr("Show button 'Delete News'"));
+  showButtonDeleteAllNotify_ = new QCheckBox(tr("Show button 'Delete All News'"));
 
   QVBoxLayout *notifierLayout3 = new QVBoxLayout();
   notifierLayout3->addWidget(showTitlesFeedsNotify_);
@@ -1182,6 +1183,7 @@ void OptionsDialog::createNotifierWidget()
   notifierLayout3->addWidget(showButtonMarkReadNotify_);
   notifierLayout3->addWidget(showButtonExBrowserNotify_);
   notifierLayout3->addWidget(showButtonDeleteNotify_);
+  notifierLayout3->addWidget(showButtonDeleteAllNotify_);
 
   onlySelectedFeeds_ = new QCheckBox(tr("Only show selected feeds:"));
   QPushButton *feedsNotiferButton = new QPushButton(tr("Feeds"));
