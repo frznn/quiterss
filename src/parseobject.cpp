@@ -483,6 +483,8 @@ void ParseObject::addAtomNewsIntoBase(NewsItemStruct *newsItem)
           isDuplicate = true;
       }
     }
+    if (!newsItem->title.isEmpty() && (titleList_.at(i) == newsItem->title))
+        isDuplicate = true;
     if (isDuplicate) break;
   }
 
